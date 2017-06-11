@@ -6,7 +6,7 @@ Proyecto seguimiento al TT
 El proyecto, actualmente se encuentra en 2 partes, la parte de MIMICS contiene lo siguiente con esta estructura:
 
 Mimics
-Consola Mimics (Contiene el codigo en java de la interfaz y el manejo de archivos
+|----Consola Mimics (Contiene el codigo en java de la interfaz y el manejo de archivos
 source (Contiene el codigo fuente necesario para compilar Mimics)
 
 
