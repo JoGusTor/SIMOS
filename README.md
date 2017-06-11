@@ -3,14 +3,15 @@
 
 El proyecto, actualmente se encuentra en 2 partes, la parte de MIMICS contiene lo siguiente con esta estructura:
 
-Mimics
-
-Consola Mimics (Contiene el codigo en java de la interfaz y el manejo de archivos)
-source (Contiene el codigo fuente necesario para compilar Mimics).
+Mimics.
 
     Mimics.
     ├───Consola Mimics.
     └───source.
+    
+>   Consola Mimics. Contiene el codigo en Java necesario para generar y manejar los archivos
+necesarios para compilar el sistema Mimics.
+>   Archivos compilados de Mimics. No borrar por ningun motivo esta carpeta.
     
     
 
