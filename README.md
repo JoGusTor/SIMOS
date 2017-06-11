@@ -14,11 +14,8 @@ necesarios para compilar el sistema Mimics.
 
 >   **Source**. Archivos compilados de Mimics. No borrar por ningun motivo esta carpeta.
     
-    
+    Lindenmayer (Contiene el codigo fuente del algoritmo que permite generar vegetacion, 1 sola iteracion o arbol)
 
-Lindenmayer (Contiene el codigo fuente del algoritmo que permite generar vegetacion, 1 sola iteracion o arbol)
-
-######################
 Consola Mimics:
 
 Las clases se encargan de dar formato a los archivos de entrada de Mimics.
