@@ -12,7 +12,7 @@ El proyecto, actualmente se encuentra en 2 partes, la parte de MIMICS contiene l
 >   Consola Mimics. Contiene el codigo en Java necesario para generar y manejar los archivos
 necesarios para compilar el sistema Mimics. 
 
->   Source.Archivos compilados de Mimics. No borrar por ningun motivo esta carpeta.
+>   Source. Archivos compilados de Mimics. No borrar por ningun motivo esta carpeta.
     
     
 
