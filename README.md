@@ -8,13 +8,9 @@ Mimics
 Consola Mimics (Contiene el codigo en java de la interfaz y el manejo de archivos)
 source (Contiene el codigo fuente necesario para compilar Mimics).
 
-    djangogirls
-    ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    Mimics.
+    ├───Consola Mimics.
+    └───source.
     
     
 
