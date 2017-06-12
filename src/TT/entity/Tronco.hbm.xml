@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-dic-2016 16:07:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="TT.entity.Tronco" table="Tronco" catalog="TT" optimistic-lock="version">
+        <id name="idTronco" type="java.lang.Integer">
+            <column name="id_tronco" />
+            <generator class="identity" />
+        </id>
+        <property name="diametro" type="java.lang.Double">
+            <column name="diametro" precision="22" scale="0" />
+        </property>
+        <property name="longitud" type="java.lang.Double">
+            <column name="longitud" precision="22" scale="0" />
+        </property>
+        <property name="deDiametro" type="java.lang.Double">
+            <column name="de_diametro" precision="22" scale="0" />
+        </property>
+        <property name="deLongitud" type="java.lang.Double">
+            <column name="de_longitud" precision="22" scale="0" />
+        </property>
+        <set name="especieCaracteristicases" table="Especie_caracteristicas" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_tronco" not-null="true" />
+            </key>
+            <one-to-many class="TT.entity.EspecieCaracteristicas" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 08-dic-2016 16:07:04 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="TT.entity.EspecieCaracteristicas" table="Especie_caracteristicas" catalog="TT" optimistic-lock="version">
+        <composite-id name="id" class="TT.entity.EspecieCaracteristicasId">
+            <key-property name="idEspecie" type="int">
+                <column name="Id_especie" />
+            </key-property>
+            <key-property name="idRp" type="int">
+                <column name="id_rp" />
+            </key-property>
+            <key-property name="idRs" type="int">
+                <column name="id_rs" />
+            </key-property>
+            <key-property name="idTronco" type="int">
+                <column name="id_tronco" />
+            </key-property>
+            <key-property name="idCopa" type="int">
+                <column name="id_copa" />
+            </key-property>
+            <key-property name="idHojas" type="int">
+                <column name="id_hojas" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="arbolEspecie" class="TT.entity.ArbolEspecie" update="false" insert="false" fetch="select">
+            <column name="Id_especie" not-null="true" />
+        </many-to-one>
+        <many-to-one name="copa" class="TT.entity.Copa" update="false" insert="false" fetch="select">
+            <column name="id_copa" not-null="true" />
+        </many-to-one>
+        <many-to-one name="hojas" class="TT.entity.Hojas" update="false" insert="false" fetch="select">
+            <column name="id_hojas" not-null="true" />
+        </many-to-one>
+        <many-to-one name="ramaPrimaria" class="TT.entity.RamaPrimaria" update="false" insert="false" fetch="select">
+            <column name="id_rp" not-null="true" />
+        </many-to-one>
+        <many-to-one name="ramaSecundaria" class="TT.entity.RamaSecundaria" update="false" insert="false" fetch="select">
+            <column name="id_rs" not-null="true" />
+        </many-to-one>
+        <many-to-one name="tronco" class="TT.entity.Tronco" update="false" insert="false" fetch="select">
+            <column name="id_tronco" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
